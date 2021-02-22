@@ -2,6 +2,8 @@
     ::ng-deep .mat-toolbar {
         display: flex;
          justify-content: space-between;
+         position: fixed;
+         z-index: 99999;
     }
     .toolbar__logo{
         img{
