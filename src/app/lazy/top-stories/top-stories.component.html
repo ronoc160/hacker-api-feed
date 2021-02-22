@@ -1,0 +1,13 @@
+<section class="site-contain">
+    <header>
+        <h1>Top Stories</h1>
+    </header>
+    <div class="site-spinner" *ngIf="apiResourcesService.loading$ | async ">
+        <mat-spinner></mat-spinner>
+    </div>
+    <section class="contain" *ngIf="stories && stories.length">
+        <app-news-card *ngFor="let data of stories" [data]="data"></app-news-card>
+        <button mat-button color="primary" class="load-more" (click)="loadMore()">load more</button>
+
+    </section>
+</section>

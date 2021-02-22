@@ -1,0 +1,19 @@
+:host{
+    ::ng-deep .mat-toolbar {
+        display: flex;
+         justify-content: space-between;
+    }
+    .toolbar__logo{
+        img{
+            width: 39px;
+            height: 30px;
+            margin-top: 10px;
+        }
+    }
+    .toolbar__nav{
+        ul {
+            display: flex;
+            list-style: none;
+        }
+    }
+}

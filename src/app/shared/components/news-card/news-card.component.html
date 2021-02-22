@@ -1,0 +1,20 @@
+<mat-card class="card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{data?.by}}</mat-card-title>
+    <mat-card-subtitle>{{data?.time * 1000 | date}}</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <p>
+      {{data?.title}}
+    </p>
+    <p *ngIf="data?.type"> type: {{data?.type}}</p>
+    <button (click)="showAlert()" mat-raised-button color="primary" [matBadge]="data?.score" matBadgePosition="after">
+      Rate..
+    </button>
+  </mat-card-content>
+  <mat-card-actions>
+    <a [href]="data?.url" target="_blank">Go to url</a>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,38 @@
+html, body { height: 100%; }
+
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    height: 100vh;
+    color: #2e383b;
+ }
+.site-contain{
+   max-width: 960px;
+   width: 100%;
+   margin: auto;
+   padding-top: 35px;
+}
+ .contain {
+    max-width: 550px;
+    margin: auto;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+ }
+
+ a{
+    text-decoration: none;
+    margin: 20px;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+ }
+
+ .active-route {
+    text-decoration: underline;
+    color: black;
+ }

@@ -1,0 +1,18 @@
+<mat-toolbar class="mat-elevation-z4">
+    <div class="toolbar__logo">
+       <a routerLink="/"> <img src="../../../assets/hacker.png" alt="site logo"></a>
+    </div>
+
+    <div class="toolbar__nav">
+
+        <ul>
+            <li *ngFor="let data of navList"> 
+                <a 
+                    [routerLink]="data.link"
+                    routerLinkActive="active-route">
+                    {{data.title}}
+                </a> 
+            </li>
+        </ul>
+    </div>
+</mat-toolbar>
